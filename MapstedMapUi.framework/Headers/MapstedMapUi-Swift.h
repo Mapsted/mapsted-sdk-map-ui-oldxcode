@@ -312,11 +312,13 @@ SWIFT_CLASS("_TtC12MapstedMapUi14CoreDataHelper")
 
 
 
+@class UITraitCollection;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC12MapstedMapUi34MapstedMapUiInternalViewController")
 @interface MapstedMapUiInternalViewController : UIViewController <UIGestureRecognizerDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillAppear:(BOOL)animated;
